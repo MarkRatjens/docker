@@ -1,19 +1,13 @@
 {
-  "identifier": "docker",
+  "identifier": "terraform_docker",
   "about": {
-    "title": "Docker",
-    "explanation": "Docker Configuration BP"
+    "title": "Terraform Docker Provider",
+    "explanation": "Declares Terraform's registry configuration for Docker"
   },
-  "provider": {
-    "type": "docker"
-  },
-  "configuration": {
-    "version": "2.15.0",
-    "source": "kreuzwerker/docker",
-    "generate_client_certificates": true,
-    "accept_remote_certificate": true,
-    "scheme": "https",
-    "address": "192.168.20.220",
-    "password": "^^random(16)^^"
+  "binding_target": {
+    "configuration": {
+      "version": "2.15.0",
+      "source": "kreuzwerker/docker"
+    }
   }
 }
